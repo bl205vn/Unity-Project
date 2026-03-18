@@ -1,0 +1,18 @@
+1 - Coroutine -> kích hoạt coroutin và chờ đợi coroutine hoàn thành.. (xem lại ví dụ xe tăng )
+Viết 1 script sử dụng coroutine để di chuyển nhân vật tới vị trí A > chờ 1s > xoay nhân vật liên tục quanh trục Y
+
+2 - Cinemachine -> blend -> chuyển giữa 2 camera -> ví dụ trên lớp: đi vào 1 vùng thì camera chuyển tới camera 2 nhìn vào cái hộp
+Tạo chức năng: ví dụ nhân vật di chuyển tới vị trí X -> chuyển camera nhìn vào 1 đối tượng ở xa -> sau 2s thì quay về camera nhân vật
+
+3 - Post-Processing -> chỉnh màu, trắng đen, film grain, vingette -> tạo đối tượng Volume > Global...
+Bấm phím H để bật tắt chức năng: tạo ánh sáng rực rỡ (bloom) và điều chỉnh tông màu ấm
+
+4 - FSM & Behavior -> tạo ít nhất 2 trạng thái và chuyển đổi trạng thái
+-Viết script sử dụng FSM để tạo trạng thái cho 1 đối tượng (hình hộp) di chuyển qua lại giữa 2 điểm. Khi player đi vào khoảng cách (< 5) thì hộp đứng yên và xoay tròn.
+-Sử dụng Behavior để tạo trạng thái cho 1 đối tượng (hình hộp) di chuyển qua lại giữa 2 điểm. Khi player đi vào khoảng cách (< 5) thì hộp đứng yên và xoay tròn.
+
+5 - VFX Graph -> Trigger Event -> khi particle die -> kích hoạt event sinh ra 1 chùm các particle khác
+- Tạo các hạt rơi xuống theo hình nón, khi mỗi particle die nó sẽ tạo ra 10 hạt di chuyển theo hướng ngẫu nhiên
+
+6 - Pool Object 
+- cho đối tượng (hình hộp) di chuyển (hướng tùy ý sinh viên chọn) -> sau 1 thời gian (3s) thì ẩn nó đi -> đưa nó về vị trí mặc định -> lại tiếp tục di chuyển (nên tạo tối thiểu 100 đối tượng)
