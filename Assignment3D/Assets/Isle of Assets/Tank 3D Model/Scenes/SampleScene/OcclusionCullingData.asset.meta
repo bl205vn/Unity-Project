@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0a3b8028397ae01419690129c0ed1fe0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 225955
+  packageName: Tank 3D Model
+  packageVersion: 1.0.6
+  assetPath: Assets/Isle of Assets/Tank 3D Model/Scenes/SampleScene/OcclusionCullingData.asset
+  uploadId: 621320

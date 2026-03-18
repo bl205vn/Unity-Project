@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3b689fb59a3184edabfd96d188ee64ff
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 179778
+  packageName: The Island Village(UModelerX)
+  packageVersion: 1.1
+  assetPath: Assets/UModelerX_IslandVillage_URP_Editable/UModeler-Hub/Editor/Resources/Tripolygon/UModeler/Editor/UI/UnityEditorStyles/ProgressRing.json
+  uploadId: 804546
