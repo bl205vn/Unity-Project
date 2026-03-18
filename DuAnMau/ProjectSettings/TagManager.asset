@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Duday
+  - Dungdaykeo
+  - Enemy
+  - Danthuong
+  - Dandacbiet
+  - Bay1
+  - Bay2
+  - Bay3
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - Ladder
+  - grapplingLayer
+  - Dan
+  - Player
+  - Enemies
+  - NPC
+  - Bay
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 3159075053
+    locked: 0
+  - name: Nen
+    uniqueID: 898574113
+    locked: 0
+  - name: Chuyendong
+    uniqueID: 2692616501
+    locked: 0
+  m_RenderingLayers:
+  - Default

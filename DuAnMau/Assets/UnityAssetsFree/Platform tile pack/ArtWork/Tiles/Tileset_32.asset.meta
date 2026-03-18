@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2d3e4821c0602b743befc71849a70192
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 204101
+  packageName: Platform tile pack
+  packageVersion: 1.0
+  assetPath: Assets/Platform tile pack/ArtWork/Tiles/Tileset_32.asset
+  uploadId: 455465
