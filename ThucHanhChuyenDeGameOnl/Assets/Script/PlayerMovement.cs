@@ -19,6 +19,13 @@ public class PlayerMovement : NetworkBehaviour
     private float _cinemachineTargetYaw;
     private float _cinemachineTargetPitch;
 
+    [Header("Animation Networked States")]
+    [Networked] public float AnimSpeed { get; set; }
+    [Networked] public float AnimMotionSpeed { get; set; }
+    [Networked] public bool AnimGrounded { get; set; }
+    [Networked] public bool AnimJump { get; set; }
+    [Networked] public bool AnimFreeFall { get; set; }
+
     public override void Spawned()
     {
         if (CinemachineCameraTarget != null)
@@ -57,6 +64,10 @@ public class PlayerMovement : NetworkBehaviour
         // Di chuyển theo hướng nhìn của camera
         Vector3 move = transform.right * horizontal + transform.forward * vertical;
         
+        // Cập nhật giá trị tốc độ cho Animation lên máy chủ
+        AnimSpeed = new Vector2(horizontal, vertical).magnitude * speed;
+        AnimMotionSpeed = 1f;
+
         Vector3 finalMove = move * speed + new Vector3(0.0f, _verticalVelocity, 0.0f);
         controller.Move(finalMove * Runner.DeltaTime);
     }
@@ -85,8 +96,13 @@ public class PlayerMovement : NetworkBehaviour
 
     private void JumpAndGravity()
     {
+        AnimGrounded = controller.isGrounded;
+
         if (controller.isGrounded)
         {
+            AnimJump = false;
+            AnimFreeFall = false;
+
             if (_verticalVelocity < 0.0f)
             {
                 _verticalVelocity = -2f;
@@ -95,6 +111,14 @@ public class PlayerMovement : NetworkBehaviour
             if (Input.GetButton("Jump"))
             {
                 _verticalVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
+                AnimJump = true; // Kích hoạt nhảy
+            }
+        }
+        else
+        {
+            if (_verticalVelocity < 0.0f)
+            {
+                AnimFreeFall = true; // Đang rơi
             }
         }
 
