@@ -12,7 +12,14 @@ public class PlayerSpawn : SimulationBehaviour, IPlayerJoined
         //Proxies: Là bản sao nhân vật của các client khác, chỉ có thể nhìn thấy và tương tác với nhau
         if (player == Runner.LocalPlayer)
         {
-            Runner.Spawn(PlayerPrefab, Vector3.zero, Quaternion.identity, player);
+            Runner.Spawn(PlayerPrefab, new Vector3(0, 2f, 0), Quaternion.identity, player, (runner, obj) => 
+            {
+                var _playerp = obj.GetComponent<PlayerSetup>();
+                if (_playerp != null)
+                {
+                    _playerp.SetupCamera();
+                }
+            });
         }
     }
 }
