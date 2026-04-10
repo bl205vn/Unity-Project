@@ -5,10 +5,20 @@ public class PlayerActions : NetworkBehaviour
 {
     private Animator animator;
 
+    [Header("Âm thanh - Bài 3")]
+    public AudioSource audioSource;
+    public AudioClip attackSound;
+    public AudioClip jumpSound;
+    public AudioClip skillSound;
+    public AudioClip footstepSound;
+
     public override void Spawned()
     {
         // Lấy component Animator từ Game Object con chứa mô hình (Ví dụ: SM_FantasyFemale)
         animator = GetComponentInChildren<Animator>();
+
+        // Tự động tìm AudioSource trên nhân vật nếu bạn chưa kéo thả vào
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -48,6 +58,12 @@ public class PlayerActions : NetworkBehaviour
         {
             animator.SetTrigger("Attack");
         }
+
+        // BÀI 3: Đồng bộ âm thanh tấn công
+        if (audioSource != null && attackSound != null)
+        {
+            audioSource.PlayOneShot(attackSound);
+        }
     }
 
     [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
@@ -55,8 +71,12 @@ public class PlayerActions : NetworkBehaviour
     {
         // Hiển thị thông báo Nhảy theo yêu cầu Bài 2
         Debug.Log($"[Client: {Runner.LocalPlayer}] Nhân vật {Object.Id} đang Nhảy!");
-        // Animation nhảy thường quản lý bằng biến Bool ở ThirdPerson hoặc PlayerMovement rồi nên không gọi Trigger ở đây,
-        // nếu sau này (Bài 3) có thêm tiếng bước nhảy, bạn sẽ gọi AudioSource.PlayOneShot() ở trong hàm này luôn!
+        
+        // BÀI 3: Đồng bộ âm thanh nhảy
+        if (audioSource != null && jumpSound != null)
+        {
+            audioSource.PlayOneShot(jumpSound);
+        }
     }
 
     [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
@@ -66,8 +86,23 @@ public class PlayerActions : NetworkBehaviour
         
         if (animator != null)
         {
-            // Tạm thời gọi trigger "Skill". Bạn có thể setup trong Animator tương tự như cách nối "Attack".
             animator.SetTrigger("Skill");
+        }
+
+        // BÀI 3: Đồng bộ âm thanh kỹ năng
+        if (audioSource != null && skillSound != null)
+        {
+            audioSource.PlayOneShot(skillSound);
+        }
+    }
+
+    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
+    public void RpcFootstep()
+    {
+        // BÀI 3: Đồng bộ tiếng bước chân (Bạn có thể gọi hàm này thông qua Animation Event đi bộ/chạy của Unity)
+        if (audioSource != null && footstepSound != null)
+        {
+            audioSource.PlayOneShot(footstepSound);
         }
     }
 }
