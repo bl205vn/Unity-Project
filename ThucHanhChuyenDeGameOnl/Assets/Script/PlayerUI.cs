@@ -7,6 +7,7 @@ public class PlayerUI : MonoBehaviour
 {
     public TextMeshProUGUI hptext;
     public TextMeshProUGUI mptext;
+    public TextMeshProUGUI scoreText; // Thêm biến hiển thị điểm cho Canvas tổng
     
     // Khai báo thêm biến Slider (Nhớ kéo thả Slider vào Inspector nhé)
     public Slider hpSlider;
@@ -46,6 +47,9 @@ public class PlayerUI : MonoBehaviour
             // Lưu ý: Tui giả định Max HP bên PlayerStats là 100, và Max MP là 50
             if (hpSlider != null) hpSlider.value = (float)playerStats.HP / 100f;
             if (mpSlider != null) mpSlider.value = (float)playerStats.MP / 50f;
+            
+            // Xử lý Bài 2: Nối số Điểm từ PlayerStats vào chữ trên Canvas
+            if (scoreText != null) scoreText.text = $"Điểm: {playerStats.Score}";
         }
     }
 }

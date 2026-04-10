@@ -4576,8 +4576,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   hpSlider: {fileID: 5303864439943911511}
   mpSlider: {fileID: 1061228258311114744}
+  scoreText: {fileID: 0}
   _HP: 100
   _MP: 100
+  _Score: 0
 --- !u!114 &3626054143753694586
 MonoBehaviour:
   m_ObjectHideFlags: 0
