@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "generatedon": "2026-04-10T04:04:33Z",
+    "parser": "MultiReportParser (2x OpenCoverParser)",
+    "assemblies": 2,
+    "classes": 33,
+    "files": 33,
+    "coveredlines": 113,
+    "uncoveredlines": 875,
+    "coverablelines": 988,
+    "totallines": 2016,
+    "linecoverage": 11.4,
+    "coveredbranches": 0,
+    "totalbranches": 0,
+    "coveredmethods": 25,
+    "totalmethods": 121,
+    "methodcoverage": 20.6
+ },
+  "coverage": {
+    "assemblies": [
+      { "name": "FlappyBird", "classes": 6, "coverage": 15.5, "coveredlines": 17, "coverablelines": 109, "totallines": 260, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 22.7, "coveredmethods": 5, "totalmethods": 22, "classesinassembly": [
+        { "name": "FlappyBirdScript", "coverage": 26, "coveredlines": 6, "coverablelines": 23, "totallines": 60, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 2, "totalmethods": 4 },
+        { "name": "LogicScript", "coverage": 64.7, "coveredlines": 11, "coverablelines": 17, "totallines": 36, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 60, "coveredmethods": 3, "totalmethods": 5 },
+        { "name": "MenuButtonScript", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 18, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "MiddleScript", "coverage": 0, "coveredlines": 0, "coverablelines": 11, "totallines": 26, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
+        { "name": "MoveSpeedScript", "coverage": 0, "coveredlines": 0, "coverablelines": 27, "totallines": 78, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
+        { "name": "PipeScript", "coverage": 0, "coveredlines": 0, "coverablelines": 25, "totallines": 42, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 } ] },
+      { "name": "Tests", "classes": 27, "coverage": 10.9, "coveredlines": 96, "coverablelines": 879, "totallines": 1756, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 20.2, "coveredmethods": 20, "totalmethods": 99, "classesinassembly": [
+        { "name": "Test1", "coverage": 0, "coveredlines": 0, "coverablelines": 14, "totallines": 36, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
+        { "name": "TestAnimation_BirdFlap", "coverage": 0, "coveredlines": 0, "coverablelines": 37, "totallines": 78, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
+        { "name": "TestAnimation_PipeMovement", "coverage": 0, "coveredlines": 0, "coverablelines": 54, "totallines": 98, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
+        { "name": "TestAudio_BirdFlapSound", "coverage": 0, "coveredlines": 0, "coverablelines": 29, "totallines": 59, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
+        { "name": "TestAudio_GameOverSound", "coverage": 0, "coveredlines": 0, "coverablelines": 36, "totallines": 70, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
+        { "name": "TestCD01", "coverage": 0, "coveredlines": 0, "coverablelines": 23, "totallines": 47, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "TestCD02", "coverage": 0, "coveredlines": 0, "coverablelines": 17, "totallines": 36, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "TestCD03", "coverage": 0, "coveredlines": 0, "coverablelines": 25, "totallines": 45, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "TestEffects_SpeedIncrease", "coverage": 0, "coveredlines": 0, "coverablelines": 50, "totallines": 91, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
+        { "name": "TestHUD_GameOverScreenDisplay", "coverage": 0, "coveredlines": 0, "coverablelines": 39, "totallines": 74, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
+        { "name": "TestHUD_ScoreDisplayOnCollect", "coverage": 0, "coveredlines": 0, "coverablelines": 37, "totallines": 73, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
+        { "name": "TestHV01", "coverage": 0, "coveredlines": 0, "coverablelines": 18, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "TestHV02", "coverage": 0, "coveredlines": 0, "coverablelines": 30, "totallines": 54, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
+        { "name": "TestHV03", "coverage": 0, "coveredlines": 0, "coverablelines": 31, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
+        { "name": "TestKN01", "coverage": 0, "coveredlines": 0, "coverablelines": 15, "totallines": 28, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "TestKN02", "coverage": 0, "coveredlines": 0, "coverablelines": 15, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "TestKN03", "coverage": 0, "coveredlines": 0, "coverablelines": 14, "totallines": 26, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "TestLab8_ParallelTesting", "coverage": 100, "coveredlines": 96, "coverablelines": 96, "totallines": 215, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 20, "totalmethods": 20 },
+        { "name": "TestNV01", "coverage": 0, "coveredlines": 0, "coverablelines": 19, "totallines": 38, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "TestNV02", "coverage": 0, "coveredlines": 0, "coverablelines": 21, "totallines": 37, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "TestNV03", "coverage": 0, "coveredlines": 0, "coverablelines": 22, "totallines": 41, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "Tests.TestIntegration_FlappyBird", "coverage": 0, "coveredlines": 0, "coverablelines": 90, "totallines": 204, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
+        { "name": "Tests.TestUI_MainMenu", "coverage": 0, "coveredlines": 0, "coverablelines": 34, "totallines": 89, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
+        { "name": "TestTC01", "coverage": 0, "coveredlines": 0, "coverablelines": 23, "totallines": 43, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "TestTC02", "coverage": 0, "coveredlines": 0, "coverablelines": 21, "totallines": 37, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "TestTC03", "coverage": 0, "coveredlines": 0, "coverablelines": 33, "totallines": 56, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
+        { "name": "TestUI_GameOverButtons", "coverage": 0, "coveredlines": 0, "coverablelines": 36, "totallines": 66, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 } ] } ]
+  }
+}
