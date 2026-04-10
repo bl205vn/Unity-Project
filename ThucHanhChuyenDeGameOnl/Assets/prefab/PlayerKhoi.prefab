@@ -4370,6 +4370,7 @@ GameObject:
   - component: {fileID: 8423428041006920403}
   - component: {fileID: 8688573707296150497}
   - component: {fileID: 1228697729314306609}
+  - component: {fileID: 3626054143753694586}
   m_Layer: 0
   m_Name: PlayerKhoi
   m_TagString: Untagged
@@ -4482,6 +4483,7 @@ MonoBehaviour:
   - {fileID: 8423428041006920403}
   - {fileID: 8688573707296150497}
   - {fileID: 1228697729314306609}
+  - {fileID: 3626054143753694586}
   ForceRemoteRenderTimeframe: 0
 --- !u!114 &6652665857476793291
 MonoBehaviour:
@@ -4575,3 +4577,15 @@ MonoBehaviour:
   mpSlider: {fileID: 1061228258311114744}
   _HP: 100
   _MP: 100
+--- !u!114 &3626054143753694586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9216789911995174535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd349f277f585ca45856d3b373c5e3be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerActions
