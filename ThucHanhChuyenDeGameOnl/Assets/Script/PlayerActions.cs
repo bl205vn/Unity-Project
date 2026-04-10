@@ -105,4 +105,28 @@ public class PlayerActions : NetworkBehaviour
             audioSource.PlayOneShot(footstepSound);
         }
     }
+
+    // --- BÀI 3: LOGIC VA CHẠM VÀ MÁU ---
+    // Hàm này được gọi từ AnimationEventReceiver khi nắm đấm chạm đích
+    public void OnAnimationHit()
+    {
+        // Vẽ vòng tròn vật lý ảo phía trước nhân vật 1.5m, bán kính 1m
+        Vector3 hitCenter = transform.position + transform.forward * 1.5f + Vector3.up * 1f; // Nâng lên 1m để căn giữa thân
+        Collider[] hits = Physics.OverlapSphere(hitCenter, 1f);
+
+        foreach (var hit in hits)
+        {
+            // Nếu trúng chính bản thân mình thì bỏ qua
+            if (hit.gameObject == this.gameObject) continue;
+
+            // Nếu trúng nhân vật đứa khác
+            PlayerStats targetStats = hit.GetComponent<PlayerStats>();
+            if (targetStats != null)
+            {
+                // SHARED MODE: Ra lệnh chém thẳng vào đứa bị chém (RpcSources.All cho phép đứa chém gọi lệnh lên nạn nhân)
+                targetStats.RpcTakeDamage(34, Runner.LocalPlayer);
+                break; 
+            }
+        }
+    }
 }

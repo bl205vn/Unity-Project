@@ -49,4 +49,33 @@ public class PlayerStats : NetworkBehaviour
         MP += mpChange;
         Score += scoreChange;
     }
+
+    // --- SHARED MODE LOGIC ---
+    // Hàm nhận sát thương (Ai cũng có thể tát mình -> RpcSources.All. Nhưng chỉ CƠ THỂ MÌNH (StateAuthority) mới được tụt máu)
+    [Rpc(RpcSources.All, RpcTargets.StateAuthority)]
+    public void RpcTakeDamage(int damage, PlayerRef attacker)
+    {
+        HP -= damage;
+        if (HP <= 0)
+        {
+            HP = 100; // Hồi sinh múa cột lại 100
+            
+            // Tìm và gửi tiền thưởng (điểm) ngược lại cho thủ phạm
+            foreach (var player in FindObjectsByType<PlayerStats>(FindObjectsSortMode.None))
+            {
+                if (player.Object != null && player.Object.InputAuthority == attacker)
+                {
+                    player.RpcAddScore(10);
+                    break;
+                }
+            }
+        }
+    }
+
+    // Rpc để nhận tiền thưởng từ nạn nhân
+    [Rpc(RpcSources.All, RpcTargets.StateAuthority)]
+    public void RpcAddScore(int points)
+    {
+        Score += points;
+    }
 }
