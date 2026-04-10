@@ -21,6 +21,17 @@ public class PlayerActions : NetworkBehaviour
         {
             RpcAttack();
         }
+
+        // BÀI 2: Bấm Space để Nhảy và Phím F để Kỹ Năng
+        // Note: Chức năng bay lên vật lý có thể đã code ở PlayerMovement, ở đây ta gọi RPC để đáp ứng yêu cầu đồng bộ âm thanh/thông báo của Lab
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            RpcJump();
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            RpcSpecialSkill();
+        }
     }
 
     // [Rpc] đánh dấu đây là hàm đồng bộ mạng.
@@ -36,6 +47,27 @@ public class PlayerActions : NetworkBehaviour
         if (animator != null)
         {
             animator.SetTrigger("Attack");
+        }
+    }
+
+    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
+    public void RpcJump()
+    {
+        // Hiển thị thông báo Nhảy theo yêu cầu Bài 2
+        Debug.Log($"[Client: {Runner.LocalPlayer}] Nhân vật {Object.Id} đang Nhảy!");
+        // Animation nhảy thường quản lý bằng biến Bool ở ThirdPerson hoặc PlayerMovement rồi nên không gọi Trigger ở đây,
+        // nếu sau này (Bài 3) có thêm tiếng bước nhảy, bạn sẽ gọi AudioSource.PlayOneShot() ở trong hàm này luôn!
+    }
+
+    [Rpc(RpcSources.InputAuthority, RpcTargets.All)]
+    public void RpcSpecialSkill()
+    {
+        Debug.Log($"[Client: {Runner.LocalPlayer}] Nhân vật {Object.Id} đang dùng Kỹ năng đặc biệt (Phím F)!");
+        
+        if (animator != null)
+        {
+            // Tạm thời gọi trigger "Skill". Bạn có thể setup trong Animator tương tự như cách nối "Attack".
+            animator.SetTrigger("Skill");
         }
     }
 }
