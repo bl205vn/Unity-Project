@@ -26,6 +26,11 @@ public class PlayerActions : NetworkBehaviour
         // Cần có Object == null vì Update() của Unity chạy liên tục kể cả trước khi máy chủ sinh nhân vật ra
         if (Object == null || !Object.HasInputAuthority) return;
 
+        // Nếu người chơi đang nháy chuột gõ chữ vào khung Chat (hoặc bất kỳ UI nào), thì BỎ QUA mọi phím!
+        if (UnityEngine.EventSystems.EventSystem.current != null && 
+            UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject != null) 
+            return;
+
         // BÀI 1: Bấm chuột trái để tấn công
         if (Input.GetMouseButtonDown(0))
         {
@@ -33,7 +38,6 @@ public class PlayerActions : NetworkBehaviour
         }
 
         // BÀI 2: Bấm Space để Nhảy và Phím F để Kỹ Năng
-        // Note: Chức năng bay lên vật lý có thể đã code ở PlayerMovement, ở đây ta gọi RPC để đáp ứng yêu cầu đồng bộ âm thanh/thông báo của Lab
         if (Input.GetKeyDown(KeyCode.Space))
         {
             RpcJump();
