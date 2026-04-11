@@ -4372,6 +4372,7 @@ GameObject:
   - component: {fileID: 1228697729314306609}
   - component: {fileID: 3626054143753694586}
   - component: {fileID: 3584742739745087058}
+  - component: {fileID: 6262208059366608412}
   m_Layer: 0
   m_Name: PlayerKhoi
   m_TagString: Untagged
@@ -4485,6 +4486,7 @@ MonoBehaviour:
   - {fileID: 8688573707296150497}
   - {fileID: 1228697729314306609}
   - {fileID: 3626054143753694586}
+  - {fileID: 6262208059366608412}
   ForceRemoteRenderTimeframe: 0
 --- !u!114 &6652665857476793291
 MonoBehaviour:
@@ -4576,7 +4578,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   hpSlider: {fileID: 5303864439943911511}
   mpSlider: {fileID: 1061228258311114744}
-  scoreText: {fileID: 0}
   _HP: 100
   _MP: 100
   _Score: 0
@@ -4694,3 +4695,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6262208059366608412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9216789911995174535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce8bfb8bf440fd64798a1f472ada96ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChatManager
+  chatUI: {fileID: 0}
