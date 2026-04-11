@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>10/04/2026 - 11:04:33 SA</Generatedon>
+    <Generatedon>11/04/2026 - 11:15:48 SA</Generatedon>
     <Parser>MultiReportParser (2x OpenCoverParser)</Parser>
     <Assemblies>2</Assemblies>
     <Classes>33</Classes>
     <Files>33</Files>
-    <Coveredlines>113</Coveredlines>
-    <Uncoveredlines>875</Uncoveredlines>
+    <Coveredlines>929</Coveredlines>
+    <Uncoveredlines>59</Uncoveredlines>
     <Coverablelines>988</Coverablelines>
     <Totallines>2016</Totallines>
-    <Linecoverage>11.4</Linecoverage>
+    <Linecoverage>94</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>25</Coveredmethods>
+    <Coveredmethods>115</Coveredmethods>
     <Totalmethods>121</Totalmethods>
-    <Methodcoverage>20.6</Methodcoverage>
+    <Methodcoverage>95</Methodcoverage>
   </Summary>
   <Coverage>
-    <Assembly name="FlappyBird" classes="6" coverage="15.5" coveredlines="17" coverablelines="109" totallines="260" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="22" methodcoverage="22.7">
-      <Class name="FlappyBirdScript" coverage="26" coveredlines="6" coverablelines="23" totallines="60" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="4" methodcoverage="50" />
+    <Assembly name="FlappyBird" classes="6" coverage="73.3" coveredlines="80" coverablelines="109" totallines="260" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="16" totalmethods="22" methodcoverage="72.7">
+      <Class name="FlappyBirdScript" coverage="82.6" coveredlines="19" coverablelines="23" totallines="60" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
       <Class name="LogicScript" coverage="64.7" coveredlines="11" coverablelines="17" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="5" methodcoverage="60" />
       <Class name="MenuButtonScript" coverage="0" coveredlines="0" coverablelines="6" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="MiddleScript" coverage="0" coveredlines="0" coverablelines="11" totallines="26" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
-      <Class name="MoveSpeedScript" coverage="0" coveredlines="0" coverablelines="27" totallines="78" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
-      <Class name="PipeScript" coverage="0" coveredlines="0" coverablelines="25" totallines="42" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
+      <Class name="MiddleScript" coverage="45.4" coveredlines="5" coverablelines="11" totallines="26" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="3" methodcoverage="66.6" />
+      <Class name="MoveSpeedScript" coverage="100" coveredlines="27" coverablelines="27" totallines="78" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="PipeScript" coverage="72" coveredlines="18" coverablelines="25" totallines="42" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="5" methodcoverage="80" />
     </Assembly>
-    <Assembly name="Tests" classes="27" coverage="10.9" coveredlines="96" coverablelines="879" totallines="1756" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="20" totalmethods="99" methodcoverage="20.2">
-      <Class name="Test1" coverage="0" coveredlines="0" coverablelines="14" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
-      <Class name="TestAnimation_BirdFlap" coverage="0" coveredlines="0" coverablelines="37" totallines="78" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
-      <Class name="TestAnimation_PipeMovement" coverage="0" coveredlines="0" coverablelines="54" totallines="98" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
-      <Class name="TestAudio_BirdFlapSound" coverage="0" coveredlines="0" coverablelines="29" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
-      <Class name="TestAudio_GameOverSound" coverage="0" coveredlines="0" coverablelines="36" totallines="70" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
-      <Class name="TestCD01" coverage="0" coveredlines="0" coverablelines="23" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="TestCD02" coverage="0" coveredlines="0" coverablelines="17" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="TestCD03" coverage="0" coveredlines="0" coverablelines="25" totallines="45" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="TestEffects_SpeedIncrease" coverage="0" coveredlines="0" coverablelines="50" totallines="91" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
-      <Class name="TestHUD_GameOverScreenDisplay" coverage="0" coveredlines="0" coverablelines="39" totallines="74" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
-      <Class name="TestHUD_ScoreDisplayOnCollect" coverage="0" coveredlines="0" coverablelines="37" totallines="73" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
-      <Class name="TestHV01" coverage="0" coveredlines="0" coverablelines="18" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="TestHV02" coverage="0" coveredlines="0" coverablelines="30" totallines="54" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
-      <Class name="TestHV03" coverage="0" coveredlines="0" coverablelines="31" totallines="55" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
-      <Class name="TestKN01" coverage="0" coveredlines="0" coverablelines="15" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="TestKN02" coverage="0" coveredlines="0" coverablelines="15" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="TestKN03" coverage="0" coveredlines="0" coverablelines="14" totallines="26" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
+    <Assembly name="Tests" classes="27" coverage="96.5" coveredlines="849" coverablelines="879" totallines="1756" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="99" totalmethods="99" methodcoverage="100">
+      <Class name="Test1" coverage="57.1" coveredlines="8" coverablelines="14" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="TestAnimation_BirdFlap" coverage="100" coveredlines="37" coverablelines="37" totallines="78" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
+      <Class name="TestAnimation_PipeMovement" coverage="88.8" coveredlines="48" coverablelines="54" totallines="98" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="5" methodcoverage="100" />
+      <Class name="TestAudio_BirdFlapSound" coverage="100" coveredlines="29" coverablelines="29" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
+      <Class name="TestAudio_GameOverSound" coverage="97.2" coveredlines="35" coverablelines="36" totallines="70" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
+      <Class name="TestCD01" coverage="100" coveredlines="23" coverablelines="23" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="TestCD02" coverage="100" coveredlines="17" coverablelines="17" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="TestCD03" coverage="100" coveredlines="25" coverablelines="25" totallines="45" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="TestEffects_SpeedIncrease" coverage="100" coveredlines="50" coverablelines="50" totallines="91" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
+      <Class name="TestHUD_GameOverScreenDisplay" coverage="100" coveredlines="39" coverablelines="39" totallines="74" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
+      <Class name="TestHUD_ScoreDisplayOnCollect" coverage="100" coveredlines="37" coverablelines="37" totallines="73" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
+      <Class name="TestHV01" coverage="100" coveredlines="18" coverablelines="18" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="TestHV02" coverage="80" coveredlines="24" coverablelines="30" totallines="54" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="TestHV03" coverage="80.6" coveredlines="25" coverablelines="31" totallines="55" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="TestKN01" coverage="100" coveredlines="15" coverablelines="15" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="TestKN02" coverage="100" coveredlines="15" coverablelines="15" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="TestKN03" coverage="100" coveredlines="14" coverablelines="14" totallines="26" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
       <Class name="TestLab8_ParallelTesting" coverage="100" coveredlines="96" coverablelines="96" totallines="215" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="20" totalmethods="20" methodcoverage="100" />
-      <Class name="TestNV01" coverage="0" coveredlines="0" coverablelines="19" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="TestNV02" coverage="0" coveredlines="0" coverablelines="21" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="TestNV03" coverage="0" coveredlines="0" coverablelines="22" totallines="41" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="Tests.TestIntegration_FlappyBird" coverage="0" coveredlines="0" coverablelines="90" totallines="204" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
-      <Class name="Tests.TestUI_MainMenu" coverage="0" coveredlines="0" coverablelines="34" totallines="89" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
-      <Class name="TestTC01" coverage="0" coveredlines="0" coverablelines="23" totallines="43" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="TestTC02" coverage="0" coveredlines="0" coverablelines="21" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="TestTC03" coverage="0" coveredlines="0" coverablelines="33" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
-      <Class name="TestUI_GameOverButtons" coverage="0" coveredlines="0" coverablelines="36" totallines="66" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="TestNV01" coverage="100" coveredlines="19" coverablelines="19" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="TestNV02" coverage="100" coveredlines="21" coverablelines="21" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="TestNV03" coverage="100" coveredlines="22" coverablelines="22" totallines="41" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="Tests.TestIntegration_FlappyBird" coverage="100" coveredlines="90" coverablelines="90" totallines="204" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
+      <Class name="Tests.TestUI_MainMenu" coverage="94.1" coveredlines="32" coverablelines="34" totallines="89" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="TestTC01" coverage="100" coveredlines="23" coverablelines="23" totallines="43" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="TestTC02" coverage="100" coveredlines="21" coverablelines="21" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="TestTC03" coverage="90.9" coveredlines="30" coverablelines="33" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="TestUI_GameOverButtons" coverage="100" coveredlines="36" coverablelines="36" totallines="66" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
     </Assembly>
   </Coverage>
 </CoverageReport>
