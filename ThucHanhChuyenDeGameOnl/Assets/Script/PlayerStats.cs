@@ -28,8 +28,8 @@ public class PlayerStats : NetworkBehaviour
     {
         if (Object == null) return;
 
-        // Bắt sự kiện phím
-        if (Object.HasInputAuthority)
+        // Bắt sự kiện phím (nhưng bỏ qua nếu đang chat!)
+        if (Object.HasInputAuthority && !ChatUI.IsChatting)
         {
             if (Input.GetKeyDown(KeyCode.H)) RpcModifyStats(-10, 0, 0); // Bài 1: Trừ máu
             if (Input.GetKeyDown(KeyCode.J)) RpcModifyStats(0, -5, 0);  

@@ -53,6 +53,14 @@ public class PlayerMovement : NetworkBehaviour
     {
         if (!Object.HasInputAuthority) return;
 
+        // Đóng băng di chuyển + nhảy khi đang chat!
+        if (ChatUI.IsChatting)
+        {
+            AnimSpeed = 0f;
+            AnimMotionSpeed = 0f;
+            return;
+        }
+
         JumpAndGravity();
 
         var horizontal = Input.GetAxis("Horizontal");
