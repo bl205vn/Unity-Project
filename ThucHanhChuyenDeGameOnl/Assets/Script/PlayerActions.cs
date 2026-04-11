@@ -26,10 +26,8 @@ public class PlayerActions : NetworkBehaviour
         // Cần có Object == null vì Update() của Unity chạy liên tục kể cả trước khi máy chủ sinh nhân vật ra
         if (Object == null || !Object.HasInputAuthority) return;
 
-        // Nếu người chơi đang nháy chuột gõ chữ vào khung Chat (hoặc bất kỳ UI nào), thì BỎ QUA mọi phím!
-        if (UnityEngine.EventSystems.EventSystem.current != null && 
-            UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject != null) 
-            return;
+        // Khóa toàn bộ các nút đánh, di chuyển chiêu thức nếu cờ Chat đang bật! Rất xịn!
+        if (ChatUI.IsChatting) return;
 
         // BÀI 1: Bấm chuột trái để tấn công
         if (Input.GetMouseButtonDown(0))

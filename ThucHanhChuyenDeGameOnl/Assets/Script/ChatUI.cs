@@ -25,6 +25,9 @@ public class ChatUI : MonoBehaviour
     // Mặc định lúc chơi game sẽ ở Tab Fusion
     private ChatMode currentMode = ChatMode.Fusion; 
 
+    // Biến toàn cục (static) để các script khác (như PlayerActions, PlayerMovement) đọc được xem có đang chat không
+    public static bool IsChatting = false;
+
     private void Start()
     {
         // Gắn sự kiện click cho các nút
@@ -36,31 +39,29 @@ public class ChatUI : MonoBehaviour
 
         // Tự động setup giao diện mặc định cho dòng chữ Channel
         SwitchMode(ChatMode.Fusion);
-
-        // ĐÁP ỨNG LAB 7: Lắng nghe sự kiện Enter của InputField
-        if (inputField != null)
-        {
-            inputField.onSubmit.AddListener(OnSubmitChat);
-        }
-    }
-
-    private void OnSubmitChat(string text)
-    {
-        // Khi bấm Enter trong lúc gõ -> Gửi chữ và đóng chat
-        SendMessage();
-        SetChatModeActive(false);
+        IsChatting = false;
     }
 
     private void Update()
     {
-        // Nhấn Enter để bật khung chat nếu người chơi đang di chuyển (chưa focus)
-        if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) && !inputField.isFocused)
+        // Xử lý phím Enter
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
-            SetChatModeActive(true);
+            if (IsChatting)
+            {
+                // Nếu đang chat thì gửi chữ đi, sau đó đóng chat!
+                SendMessage();
+                SetChatModeActive(false);
+            }
+            else
+            {
+                // Nếu đang rảnh rỗi (đi lại), ấn Enter sẽ mở chat
+                SetChatModeActive(true);
+            }
         }
 
         // Nhấn phím Escape để hủy chat, quay lại điều khiển nhân vật
-        if (Input.GetKeyDown(KeyCode.Escape) && inputField.isFocused)
+        if (Input.GetKeyDown(KeyCode.Escape) && IsChatting)
         {
             inputField.text = ""; // Xoá chữ gõ dở
             SetChatModeActive(false);
@@ -122,22 +123,24 @@ public class ChatUI : MonoBehaviour
     }
 
     // Tắt / Bật trạng thái Chat và khóa di chuyển / chuột
-    private void SetChatModeActive(bool isChatting)
+    private void SetChatModeActive(bool chatActive)
     {
+        IsChatting = chatActive;
+
         // Cố gắng tìm component điều khiển của StarterAssets
         var playerInputs = FindAnyObjectByType<StarterAssets.StarterAssetsInputs>();
         if (playerInputs != null)
         {
             // Nếu đang chat: hiện chuột, khóa camera vòng quanh
             // Nếu tắt chat: khóa chuột, bật lại camera vòng quanh
-            playerInputs.cursorLocked = !isChatting;
-            playerInputs.cursorInputForLook = !isChatting;
+            playerInputs.cursorLocked = !chatActive;
+            playerInputs.cursorInputForLook = !chatActive;
             
-            Cursor.lockState = isChatting ? CursorLockMode.None : CursorLockMode.Locked;
-            Cursor.visible = isChatting;
+            Cursor.lockState = chatActive ? CursorLockMode.None : CursorLockMode.Locked;
+            Cursor.visible = chatActive;
         }
 
-        if (isChatting)
+        if (chatActive)
         {
             inputField.ActivateInputField();
         }
