@@ -46,6 +46,9 @@ public class PlayerMovement : NetworkBehaviour
         // Đưa việc xoay Camera ra LateUpdate để cập nhật song song với Frame màn hình (vd 144Hz) thay vì Tick mạng (60Hz) -> Hết giật lag
         if (Object == null || !Object.HasInputAuthority) return;
 
+        // Khóa xoay camera khi đang chat! Nếu không, di chuột tới nút Send sẽ xoay camera lung tung
+        if (ChatUI.IsChatting) return;
+
         CameraRotation();
     }
 

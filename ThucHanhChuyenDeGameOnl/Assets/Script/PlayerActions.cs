@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Fusion;
 
 public class PlayerActions : NetworkBehaviour
@@ -30,7 +31,8 @@ public class PlayerActions : NetworkBehaviour
         if (ChatUI.IsChatting) return;
 
         // BÀI 1: Bấm chuột trái để tấn công
-        if (Input.GetMouseButtonDown(0))
+        // Kiểm tra chuột có đang ở trên UI (nút Send, ô chat...) không → nếu có thì KHÔNG tấn công!
+        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             RpcAttack();
         }
