@@ -1,56 +1,59 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 11/04/2026 - 11:15:48 SA |
-| Parser: | MultiReportParser (2x OpenCoverParser) |
+| Generated on: | 21/04/2026 - 8:36:50 SA |
+| Parser: | MultiReportParser (4x OpenCoverParser) |
 | Assemblies: | 2 |
-| Classes: | 33 |
-| Files: | 33 |
-| Covered lines: | 929 |
-| Uncovered lines: | 59 |
-| Coverable lines: | 988 |
-| Total lines: | 2016 |
-| Line coverage: | 94% (929 of 988) |
+| Classes: | 36 |
+| Files: | 36 |
+| Covered lines: | 3 |
+| Uncovered lines: | 996 |
+| Coverable lines: | 999 |
+| Total lines: | 2058 |
+| Line coverage: | 0.3% (3 of 999) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 115 |
-| Total methods: | 121 |
-| Method coverage: | 95% (115 of 121) |
+| Covered methods: | 1 |
+| Total methods: | 125 |
+| Method coverage: | 0.8% (1 of 125) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**FlappyBird**|**80**|**29**|**109**|**260**|**73.3%**|**0**|**0**|****|**16**|**22**|**72.7%**|
-|FlappyBirdScript|19|4|23|60|82.6%|0|0||4|4|100%|
-|LogicScript|11|6|17|36|64.7%|0|0||3|5|60%|
+|**FlappyBird**|**3**|**112**|**115**|**278**|**2.6%**|**0**|**0**|****|**1**|**24**|**4.1%**|
+|CombatSystem|0|3|3|9|0%|0|0||0|1|0%|
+|FlappyBirdScript|0|23|23|60|0%|0|0||0|4|0%|
+|LogicScript|0|17|17|36|0%|0|0||0|5|0%|
 |MenuButtonScript|0|6|6|18|0%|0|0||0|2|0%|
-|MiddleScript|5|6|11|26|45.4%|0|0||2|3|66.6%|
-|MoveSpeedScript|27|0|27|78|100%|0|0||3|3|100%|
-|PipeScript|18|7|25|42|72%|0|0||4|5|80%|
-|**Tests**|**849**|**30**|**879**|**1756**|**96.5%**|**0**|**0**|****|**99**|**99**|**100%**|
-|Test1|8|6|14|36|57.1%|0|0||3|3|100%|
-|TestAnimation_BirdFlap|37|0|37|78|100%|0|0||4|4|100%|
-|TestAnimation_PipeMovement|48|6|54|98|88.8%|0|0||5|5|100%|
-|TestAudio_BirdFlapSound|29|0|29|59|100%|0|0||4|4|100%|
-|TestAudio_GameOverSound|35|1|36|70|97.2%|0|0||4|4|100%|
-|TestCD01|23|0|23|47|100%|0|0||2|2|100%|
-|TestCD02|17|0|17|36|100%|0|0||2|2|100%|
-|TestCD03|25|0|25|45|100%|0|0||2|2|100%|
-|TestEffects_SpeedIncrease|50|0|50|91|100%|0|0||4|4|100%|
-|TestHUD_GameOverScreenDisplay|39|0|39|74|100%|0|0||4|4|100%|
-|TestHUD_ScoreDisplayOnCollect|37|0|37|73|100%|0|0||4|4|100%|
-|TestHV01|18|0|18|33|100%|0|0||2|2|100%|
-|TestHV02|24|6|30|54|80%|0|0||3|3|100%|
-|TestHV03|25|6|31|55|80.6%|0|0||3|3|100%|
-|TestKN01|15|0|15|28|100%|0|0||2|2|100%|
-|TestKN02|15|0|15|27|100%|0|0||2|2|100%|
-|TestKN03|14|0|14|26|100%|0|0||2|2|100%|
-|TestLab8_ParallelTesting|96|0|96|215|100%|0|0||20|20|100%|
-|TestNV01|19|0|19|38|100%|0|0||2|2|100%|
-|TestNV02|21|0|21|37|100%|0|0||2|2|100%|
-|TestNV03|22|0|22|41|100%|0|0||2|2|100%|
-|Tests.TestIntegration_FlappyBird|90|0|90|204|100%|0|0||7|7|100%|
-|Tests.TestUI_MainMenu|32|2|34|89|94.1%|0|0||3|3|100%|
-|TestTC01|23|0|23|43|100%|0|0||2|2|100%|
-|TestTC02|21|0|21|37|100%|0|0||2|2|100%|
-|TestTC03|30|3|33|56|90.9%|0|0||3|3|100%|
-|TestUI_GameOverButtons|36|0|36|66|100%|0|0||4|4|100%|
+|MiddleScript|0|11|11|26|0%|0|0||0|3|0%|
+|MoveSpeedScript|0|27|27|78|0%|0|0||0|3|0%|
+|PipeScript|0|25|25|42|0%|0|0||0|5|0%|
+|ScoreSystem|3|0|3|9|100%|0|0||1|1|100%|
+|**Tests**|**0**|**884**|**884**|**1780**|**0%**|**0**|**0**|****|**0**|**101**|**0%**|
+|NewTestScript|0|5|5|24|0%|0|0||0|2|0%|
+|Test1|0|14|14|36|0%|0|0||0|3|0%|
+|TestAnimation_BirdFlap|0|37|37|78|0%|0|0||0|4|0%|
+|TestAnimation_PipeMovement|0|54|54|98|0%|0|0||0|5|0%|
+|TestAudio_BirdFlapSound|0|29|29|59|0%|0|0||0|4|0%|
+|TestAudio_GameOverSound|0|36|36|70|0%|0|0||0|4|0%|
+|TestCD01|0|23|23|47|0%|0|0||0|2|0%|
+|TestCD02|0|17|17|36|0%|0|0||0|2|0%|
+|TestCD03|0|25|25|45|0%|0|0||0|2|0%|
+|TestEffects_SpeedIncrease|0|50|50|91|0%|0|0||0|4|0%|
+|TestHUD_GameOverScreenDisplay|0|39|39|74|0%|0|0||0|4|0%|
+|TestHUD_ScoreDisplayOnCollect|0|37|37|73|0%|0|0||0|4|0%|
+|TestHV01|0|18|18|33|0%|0|0||0|2|0%|
+|TestHV02|0|30|30|54|0%|0|0||0|3|0%|
+|TestHV03|0|31|31|55|0%|0|0||0|3|0%|
+|TestKN01|0|15|15|28|0%|0|0||0|2|0%|
+|TestKN02|0|15|15|27|0%|0|0||0|2|0%|
+|TestKN03|0|14|14|26|0%|0|0||0|2|0%|
+|TestLab8_ParallelTesting|0|96|96|215|0%|0|0||0|20|0%|
+|TestNV01|0|19|19|38|0%|0|0||0|2|0%|
+|TestNV02|0|21|21|37|0%|0|0||0|2|0%|
+|TestNV03|0|22|22|41|0%|0|0||0|2|0%|
+|Tests.TestIntegration_FlappyBird|0|90|90|204|0%|0|0||0|7|0%|
+|Tests.TestUI_MainMenu|0|34|34|89|0%|0|0||0|3|0%|
+|TestTC01|0|23|23|43|0%|0|0||0|2|0%|
+|TestTC02|0|21|21|37|0%|0|0||0|2|0%|
+|TestTC03|0|33|33|56|0%|0|0||0|3|0%|
+|TestUI_GameOverButtons|0|36|36|66|0%|0|0||0|4|0%|

@@ -1,7 +1,7 @@
 using UnityEngine;
 using Fusion;
 
-public class PlayerSpawn : SimulationBehaviour, IPlayerJoined
+public class PlayerSpawn : SimulationBehaviour, IPlayerJoined, IPlayerLeft
 {
     public GameObject PlayerPrefab; //Khởi tạo prefab người chơi
 
@@ -20,6 +20,16 @@ public class PlayerSpawn : SimulationBehaviour, IPlayerJoined
                     _playerp.SetupCamera();
                 }
             });
+        }
+    }
+
+    public void PlayerLeft(PlayerRef player)
+    {
+        // Yêu cầu Câu 5: Dùng lại ChatContentText để thông báo
+        ChatUI chatUI = FindAnyObjectByType<ChatUI>();
+        if (chatUI != null && chatUI.chatContent != null)
+        {
+            chatUI.chatContent.text += "<color=red><i>Người chơi đã thoát trận.</i></color>\n";
         }
     }
 }

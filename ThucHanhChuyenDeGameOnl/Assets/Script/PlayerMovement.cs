@@ -3,6 +3,9 @@ using Fusion;
 
 public class PlayerMovement : NetworkBehaviour
 {
+    // Lực đẩy từ Moving Platform truyền sang
+    public Vector3 PlatformDeltaMove;
+
     public CharacterController controller;
     public float speed = 5f;
 
@@ -80,7 +83,11 @@ public class PlayerMovement : NetworkBehaviour
         AnimMotionSpeed = 1f;
 
         Vector3 finalMove = move * speed + new Vector3(0.0f, _verticalVelocity, 0.0f);
-        controller.Move(finalMove * Runner.DeltaTime);
+        // Gộp cả lực di chuyển của Player và lực kéo của Bục vào CÙNG 1 LỆNH MOVE duy nhất
+        controller.Move(finalMove * Runner.DeltaTime + PlatformDeltaMove);
+        
+        // Reset lại lực của bục sau khi đã cộng xong để frame sau tính lại
+        PlatformDeltaMove = Vector3.zero; 
     }
 
     private void CameraRotation()
